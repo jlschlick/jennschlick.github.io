@@ -7,7 +7,7 @@
       "uuidString" : "BCF345FC-65AF-4863-B169-5C7AA56062C2"
     }
   ],
-  "creatorBuild" : "34513",
+  "creatorBuild" : "34576",
   "files" : {
     "\/CNAME" : {
       "cB" : 0,
@@ -72,7 +72,8 @@
     "displayValue" : "jennschlick.com",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-tar",
-    "iconImageWasSetByUser" : 1
+    "iconImageWasSetByUser" : 1,
+    "lastBuiltDate" : 742677436.25900602
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -898,9 +899,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -912,6 +910,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1

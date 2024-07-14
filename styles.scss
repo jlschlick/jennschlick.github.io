@@ -83,6 +83,10 @@ a {
     }
 
     &:first-of-type {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
       margin-top: 13px;
       margin-bottom: 10px;
 
@@ -90,18 +94,49 @@ a {
         background: transparent;
         padding: 5px 10px;
 
-        &:first-child {
-          padding-left: 5px;
-          position: relative;
-          top: -1px;
-        }
-
         svg {
 	  			g,
 	  			path {
 	  		    fill: #bfbfbf;
 	  		  }
 	    	}
+
+        &[href*="linkedin"] {
+          svg {
+            height: 20px;
+          }
+        }
+
+        &[href*="github"]{
+          svg {
+            height: 20px;
+          }
+        }
+
+        &[href*="mailto"] {
+          svg {
+            height: 22px;
+            path {
+              fill: none;
+              stroke: #bfbfbf;
+            }
+          }
+
+          &:hover {
+            svg {
+              path {
+                fill: none;
+                stroke: #000;
+              }
+            }
+          }
+        }
+
+        &[href*="perplexity"] {
+          svg {
+            height: 20px;
+          }
+        }
 
 	    	&:hover {
 	    		svg {
@@ -134,8 +169,6 @@ a {
     svg {
       cursor: pointer;
       display: block;
-      height: 15px;
-      vertical-align: middle;
       width: auto;
     }
   }
@@ -160,17 +193,5 @@ a {
         }
       }
     }
-  }
-
-  a[href*="linkedin"] svg {
-    height: 18px;
-  }
-
-  a[href*="github"] svg {
-    height: 16px;
-  }
-
-  a[href*="mailto"] svg {
-    height: 13px;
   }
 }
